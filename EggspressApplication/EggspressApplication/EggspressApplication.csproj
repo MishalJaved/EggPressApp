@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9A891C6-63AC-4D55-9DB1-04012A27CA00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EggspressApplication</RootNamespace>
+    <AssemblyName>EggspressApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\Mishel-e-Eman\Desktop\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SautinSoft.Document, Version=3.6.12.4, Culture=neutral, PublicKeyToken=e759c76c7515592a, processorArchitecture=MSIL">
+      <HintPath>..\packages\sautinsoft.document.3.6.12.4\lib\net45\SautinSoft.Document.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.Designer.cs">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customersReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customersReport.Designer.cs">
+      <DependentUpon>customersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EPMSDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EPMSDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expense.Designer.cs">
+      <DependentUpon>expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase.Designer.cs">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportDashboard.Designer.cs">
+      <DependentUpon>reportDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportMenu.Designer.cs">
+      <DependentUpon>reportMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.cs">
+      <DependentUpon>sales.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connection.resx">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expense.resx">
+      <DependentUpon>expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="purchase.resx">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EPMSDataSet.xsc">
+      <DependentUpon>EPMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet.xss">
+      <DependentUpon>EPMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet1.xsc">
+      <DependentUpon>EPMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet1.xss">
+      <DependentUpon>EPMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet10.xsc">
+      <DependentUpon>EPMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet10.xss">
+      <DependentUpon>EPMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet11.xsc">
+      <DependentUpon>EPMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet11.xss">
+      <DependentUpon>EPMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet12.xsc">
+      <DependentUpon>EPMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet12.xss">
+      <DependentUpon>EPMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet13.xsc">
+      <DependentUpon>EPMSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet13.xss">
+      <DependentUpon>EPMSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet14.xsc">
+      <DependentUpon>EPMSDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet14.xss">
+      <DependentUpon>EPMSDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet15.xsc">
+      <DependentUpon>EPMSDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet15.xss">
+      <DependentUpon>EPMSDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet16.xsc">
+      <DependentUpon>EPMSDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet16.xss">
+      <DependentUpon>EPMSDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet2.xsc">
+      <DependentUpon>EPMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet2.xss">
+      <DependentUpon>EPMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet3.xsc">
+      <DependentUpon>EPMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet3.xss">
+      <DependentUpon>EPMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet4.xsc">
+      <DependentUpon>EPMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet4.xss">
+      <DependentUpon>EPMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet5.xsc">
+      <DependentUpon>EPMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet5.xss">
+      <DependentUpon>EPMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet6.xsc">
+      <DependentUpon>EPMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet6.xss">
+      <DependentUpon>EPMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet7.xsc">
+      <DependentUpon>EPMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet7.xss">
+      <DependentUpon>EPMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet8.xsc">
+      <DependentUpon>EPMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet8.xss">
+      <DependentUpon>EPMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet9.xsc">
+      <DependentUpon>EPMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="EPMSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EPMSDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EPMSDataSet9.xss">
+      <DependentUpon>EPMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adduser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-1_318-10653.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
